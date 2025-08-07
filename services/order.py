@@ -7,7 +7,7 @@ from datetime import datetime
 
 def create_order(
         tickets: list[dict],
-        username: User,
+        username: str,
         date: datetime = None) -> Order:
 
     user = User.objects.get(username=username)
